@@ -11,7 +11,7 @@ font = ImageFont.load_default()
 
 
 from smbus import SMBus
-i2cbus = SMBus(1)
+i2cbus = SMBus(6)
 
 oled = ssd1306(i2cbus)
 draw = oled.canvas   # "draw" onto this canvas, then call display() to send the canvas contents to the hardware.

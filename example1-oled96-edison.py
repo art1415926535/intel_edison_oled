@@ -3,7 +3,7 @@
 from lib_oled96 import ssd1306
 
 from smbus import SMBus
-i2cbus = SMBus(1)
+i2cbus = SMBus(6)
 
 oled = ssd1306(i2cbus)   # create oled object, nominating the correct I2C bus, default address
 
